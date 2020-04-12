@@ -49,6 +49,8 @@ class Solution(object):
         :type T: str
         :rtype: bool
         """
+        if (len(S) < 1 or len(S) > 200) or (len(T) < 1 or len(T) > 200):
+            return False
        
         len_s = len(S) - 1
         len_t = len(T) - 1
